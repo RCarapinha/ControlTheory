@@ -1,0 +1,106 @@
+init_db
+read_f('database_z.txt')
+read_k
+System Name: B2
+Enter Matrix A : [0 0]
+Enter Matrix B : [3 2]
+Enter Matrix C : [1 1; 2 2]
+Enter Matrix D : [1 2; 3 4]
+search_db('B')
+c=size(database,2); 
+search_db('B')
+system B
+B2
+save_db('copy.txt')
+stable_s()
+Stable systems:
+system A
+system B
+system E
+system H
+system I
+system J
+system K
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('eig')" style="font-weight:bold">eig</a>
+Input matrix must be square.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stable_s', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\stable_s.m', 11)" style="font-weight:bold">stable_s</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\stable_s.m',11,0)">line 11</a>)
+        if all(real(eig(database(i).A))<0)
+} 
+read_f('database_z.txt')
+stable_s()
+Stable systems:
+system A
+system B
+system E
+system H
+system I
+system J
+system K
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('eig')" style="font-weight:bold">eig</a>
+Input matrix must be square.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stable_s', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\stable_s.m', 11)" style="font-weight:bold">stable_s</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\stable_s.m',11,0)">line 11</a>)
+        if all(real(eig(database(i).A))<0)
+} 
+clear all
+close all
+clc
+stable_s()
+Stable systems:
+init_db
+read_f('database_z.txt')
+stable_s()
+Stable systems:
+system A
+system B
+system E
+system H
+system I
+system J
+system K
+sort_N()
+{Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sort_N', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m', 13)" style="font-weight:bold">sort_N</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m',13,0)">line 13</a>)
+        Determ = [Determ; norm(database(i).(matrix))];
+} 
+sort_N([1 1])
+{Argument to dynamic structure reference must evaluate to a valid field name.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sort_N', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m', 13)" style="font-weight:bold">sort_N</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m',13,0)">line 13</a>)
+        Determ = [Determ; norm(database(i).(matrix))];
+} 
+sort_N(1)
+{Argument to dynamic structure reference must evaluate to a valid field name.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sort_N', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m', 13)" style="font-weight:bold">sort_N</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m',13,0)">line 13</a>)
+        Determ = [Determ; norm(database(i).(matrix))];
+} 
+sort_N('A')
+{Undefined function or variable 'rows'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sort_N', 'C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m', 23)" style="font-weight:bold">sort_N</a> (<a href="matlab: opentoline('C:\Users\Carapinha\OneDrive - Universidade de Aveiro\Wroclaw\Courses\Control Theory\1st Task\New Folder\sort_N.m',23,0)">line 23</a>)
+    for i=1:rows
+} 
+sort_N('A')
+system C
+system D
+system G
+system J
+system F
+system A
+system B
+system I
+system E
+system H
+system K
+contents_db()
+system A
+length(database)
+
+ans =
+
+    11
+
+diary off

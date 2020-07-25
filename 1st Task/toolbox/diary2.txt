@@ -1,0 +1,59 @@
+>>init_db
+>>read_f('database_z.txt')
+>>read_k
+System Name: B2
+Enter Matrix A : [-2,-1;1,0]
+Enter Matrix B : [1;0]
+Enter Matrix C : [1,1]
+Enter Matrix D : [0]
+>>contents_db
+system A
+system B
+system C
+system D
+system E
+system F
+system G
+system H
+system I
+system J
+system K
+B2
+>>stable_s
+Stable systems:
+system A
+system B
+system E
+system H
+system I
+system J
+system K
+B2
+>>sort_N('A')
+system C
+system D
+system G
+system J
+system F
+system A
+system B
+B2
+system I
+system E
+system H
+system K
+>>search_db('B')
+system B
+B2
+>>save_db('copy.txt')
+>>plots('system A', 5)
+>>plots('system B', 5)
+>>plots('system C', 5)
+>>plots('system D', 5)
+>>plots('system E', 5)
+>>plots('system F', 5)
+>>plots('system G', 5)
+>>plots('system H', 5)
+>>plots('system I', 5)
+>>plots('system J', 5)
+>>plots('system K', 5)
